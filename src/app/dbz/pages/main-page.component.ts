@@ -20,4 +20,12 @@ export class MainPageComponent {
       power: 7500,
     },
   ];
+
+  addNewCharacter(character: Character): void {
+    this.characters.push(character);
+  }
+
+  deleteCharacter(index: number): void {
+    this.characters.splice(index, 1);
+  }
 }
